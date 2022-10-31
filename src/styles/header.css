@@ -5,8 +5,14 @@ header {
       url(../assets/Rectangle.png), url(../assets/background.png);
     background-size: contain;
     background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: top;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
     padding-top: 20px;
 }
