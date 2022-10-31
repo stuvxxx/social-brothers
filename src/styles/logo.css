@@ -1,0 +1,18 @@
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-left: 5%;
+    align-items: center;
+
+}
+ 
+.logo-wrapper div {
+    font-family: "Arial Rounded MT";
+    font-size: 22px;
+    color: white;
+}
+
+.logo-wrapper span {
+    color: #ff480b;
+}

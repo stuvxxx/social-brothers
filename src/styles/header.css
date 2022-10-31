@@ -1,0 +1,12 @@
+header {
+    width: 100vw;
+    height: 50vh;
+    background: 
+      url(../assets/Rectangle.png), url(../assets/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding-top: 20px;
+}
