@@ -1,0 +1,18 @@
+main {
+    background-color: #F4F4F4;
+    height: 1100px;
+}
+
+.main-wrapper {
+    margin: 75px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .main-wrapper {
+        margin: 50px 50px;
+    }
+  }

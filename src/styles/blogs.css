@@ -1,0 +1,12 @@
+.blogs-wrapper {
+    background-color: aquamarine;
+    width: 900px;
+    height: 1000px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1025px) {
+    .blogs-wrapper {
+        margin-right: 7.5px;
+    }
+  }

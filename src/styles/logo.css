@@ -18,10 +18,32 @@
  
 .logo-wrapper div {
     font-family: "Arial Rounded MT";
-    font-size: 22px;
+    font-size: 55px;
     color: white;
 }
 
 .logo-wrapper span {
-    color: #ff480b;
+    color: #E95E30;
 }
+
+.logo {
+    width: 150px;
+}
+
+@media screen and (max-width: 1025px) {
+    .logo {
+        width: 80px;    
+    }
+    .logo-wrapper div {
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .logo {
+        width: 40px;    
+    }
+    .logo-wrapper div {
+        font-size: 15px;
+    }
+  }

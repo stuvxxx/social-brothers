@@ -1,0 +1,12 @@
+.form-wrapper {
+    background-color: aquamarine;
+    width: 875px;
+    height: 1000px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 1025px) {
+    .form-wrapper {
+        margin-right: 7.5px;
+    }
+  }
