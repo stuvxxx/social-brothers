@@ -4,7 +4,7 @@ main {
 }
 
 .main-wrapper {
-    margin: 75px 100px;
+    margin: 50px 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,6 +13,6 @@ main {
 
 @media screen and (max-width: 1025px) {
     .main-wrapper {
-        margin: 50px 50px;
+        margin: 49.5px;
     }
   }
