@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "proxima";
+    src: url("../assets/fonts/ProximaNova.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "arial round";
+  src: url("../assets/fonts/arlrdbd.ttf") format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;

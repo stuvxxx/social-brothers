@@ -3,6 +3,7 @@
     width: 875px;
     height: 1000px;
     margin-right: 15px;
+    font-family: "proxima";
 }
 
 @media screen and (max-width: 1025px) {
