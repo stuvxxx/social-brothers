@@ -1,0 +1,37 @@
+.btn-load {
+    margin: 43.5px 210.75px 36px 210.75px;
+    background: #F27623;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    min-height: 46.5px;
+    color: #FFFFFF;
+    font-family: "Proxima";
+    min-width: 288px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+ }
+
+ @media screen and (max-width: 1600px) {
+    .btn-load {
+        
+        margin: 36.25px 175.6px 30px 175.6px;
+        min-height: 38.75px;
+        min-width: 240px;
+        font-size: 15px;
+    }
+  }
+
+@media screen and (max-width: 1200px) {
+    .btn-load {
+        margin: 29px 140.5px 24px 140.5px;
+        min-height: 31px;
+        min-width: 192px;
+        font-size: 12px;
+  }
+}
+
