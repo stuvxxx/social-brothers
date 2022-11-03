@@ -15,7 +15,7 @@ const Blogs = ({post}) => {
     return (
       <div className="blogs-item">
         <img src={imgBaseUrl + post.img_url} alt="a" />
-        <img src={rect} />
+        <img src={rect} alt="a"/>
         <div className="date-cat">
           <p>{removeTime(post.updated_at)}</p>
           <p>{post.category.name}</p>

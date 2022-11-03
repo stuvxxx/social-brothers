@@ -8,6 +8,7 @@ import Loading from "./Loading"
 
 const Blogs = () => {
   const [posts, setPosts] = useState([])
+  // eslint-disable-next-line no-unused-vars
   const [pages, setPages] = useState("4")
   const [loading, setLoading] = useState(true)
 
@@ -18,6 +19,7 @@ const handleClick = () => {
 }
 
 useEffect(() => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   getData("https://frontend-case-api.sbdev.nl/api/posts?page=&perPage=") }, [])
 
 
