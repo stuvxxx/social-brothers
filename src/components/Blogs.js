@@ -1,4 +1,5 @@
 import "../styles/blogs.css"
+import "../styles/buttons.css"
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 import BlogItem from "./BlogItem"
@@ -10,24 +11,34 @@ const Blogs = () => {
   const [pages, setPages] = useState("4")
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    axios.get("https://frontend-case-api.sbdev.nl/api/posts?page=&perPage=" + pages, {
-      headers: {
-        "token": "pj11daaQRz7zUIH56B9Z"
-      }
-    })
-      .then(res => {
-        console.log(res)
-        setPosts(res.data)
-      })
-      .catch(err => {
-        console.log(err)
-      })
-      .finally(() => {
-        setLoading(false)
-      })
 
-  }, [])
+const handleClick = () => {
+    const newPage = posts.next_page_url + "&perPage="
+    getData(newPage)
+}
+
+useEffect(() => {
+  getData("https://frontend-case-api.sbdev.nl/api/posts?page=&perPage=") }, [])
+
+
+const getData = (page) => {
+  axios.get(page + pages, {
+    headers: {
+      "token": "pj11daaQRz7zUIH56B9Z"
+    }
+  })
+    .then(res => {
+      console.log(res)
+      setPosts(res.data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+    .finally(() => {
+      setLoading(false)
+    })
+}
+
 
     return (
       <div className="blogs-wrapper">
@@ -40,11 +51,11 @@ const Blogs = () => {
             )
           })}
         </div>
+        <button onClick={handleClick} className="btn-load">Meer laden</button>
       </div>
   )
+  
   };
 
-
-  
   export default Blogs;
 
