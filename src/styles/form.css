@@ -1,13 +1,21 @@
 .form-wrapper {
     background-color: aquamarine;
-    width: 875px;
-    height: 1000px;
-    margin-right: 15px;
-    font-family: "proxima";
+    min-width: 645px;
+    min-height: 988.5px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1600px) {
     .form-wrapper {
-        margin-right: 7.5px;
-    }
+        background-color: aquamarine;
+        min-width: 537.5px;
+        min-height: 823.75px;
+    } 
   }
+
+@media screen and (max-width: 1200px) {
+  .form-wrapper {
+      background-color: aquamarine;
+      min-width: 430px;
+      min-height: 659px;
+  } 
+}

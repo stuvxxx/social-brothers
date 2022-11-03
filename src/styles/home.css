@@ -1,18 +1,33 @@
 main {
     background-color: #F4F4F4;
-    height: 1100px;
+    margin: 0 auto;
+    width: 1536px;
+    height: 1137px;
 }
 
 .main-wrapper {
-    margin: 50px 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 74.25px;
 }
 
-@media screen and (max-width: 1025px) {
-    .main-wrapper {
-        margin: 49.5px;
+
+@media screen and (max-width: 1600px) {
+    main {
+        background-color: #F4F4F4;
+        margin: 0 auto;
+        width: 1280px;
+        height: 947.5px;
     }
   }
+
+@media screen and (max-width: 1200px) {
+  main {
+      background-color: #F4F4F4;
+      margin: 0 auto;
+      width: 1024px;
+      height: 758px;
+  }
+}
+

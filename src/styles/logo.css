@@ -23,6 +23,7 @@
 }
 
 .logo-wrapper span {
+    font-family: "arial round";
     color: #E95E30;
 }
 
@@ -30,7 +31,7 @@
     width: 150px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
     .logo {
         width: 80px;    
     }
