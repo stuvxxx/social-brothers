@@ -1,5 +1,13 @@
+import Blogs from "../components/Blogs"
+import "../styles/blogsview.css"
+
 const BlogsView = () => {
-    return <h1>Blog Aarticles</h1>;
+  const isBig = true
+  return (
+    <>
+      <Blogs isBig={isBig}/>
+    </>
+    );
   };
   
   export default BlogsView;
