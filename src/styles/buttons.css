@@ -74,8 +74,16 @@
 
 
 
- .gone-btn-load {
-  visibility: hidden;
 }
+
+@media screen and (max-width: 700px) {
+  .btn-more {
+    min-height: 31px;
+    width: 192px;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 105px;
+ }
 }
+
 
