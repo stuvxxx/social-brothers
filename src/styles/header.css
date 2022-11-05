@@ -31,39 +31,27 @@ header {
     width: 100px; /* Need a specific value to work */
 }
 
-
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1600px) {
     header {
         padding-top: 20px;
-        max-height: 150px;
+        height: 250px;
+    }
+
+    #title {
+        font-size: 48px;
+        margin-top: 13%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding-top: 20px;
+        height: 100px;
     }
     
     #title {
-        font-size: 48px;
+        font-size: 22px;
         margin-top: 13%;
     }
-  }
-
-@media screen and (max-width: 1200px) {
-    header {
-        padding-top: 20px;
-        min-height: 250px;
-    }
-
-    #title {
-        font-size: 48px;
-        margin-top: 13%;
-    }
-  }
-
-@media screen and (max-width: 1600px) {
-  header {
-      padding-top: 20px;
-      height: 312.5px;
-  }
-
-  #title {
-      font-size: 60px;
-      margin-top: 13%;
-  }
 }
+

@@ -10,13 +10,14 @@ import Pagination from "./Pagination"
 const Blogs = ({isBig}) => {
 
   const pageNumberLimit = 5;
-  const blogsInView = isBig ? 8 : 4
+  let blogsInView = isBig ? 8 : 4
 
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1);
   const [maxPageLimit, setMaxPageLimit] = useState(5);
   const [minPageLimit, setMinPageLimit] = useState(0);
+
  
   const getData = (page) => {
     axios.get(page + blogsInView, {
@@ -53,6 +54,7 @@ const Blogs = ({isBig}) => {
   useEffect(() => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     getData("https://frontend-case-api.sbdev.nl/api/posts?page=&perPage=") }, [])
+
 
     const onPageChange= (pageNumber)=>{
       console.log(pageNumber)
