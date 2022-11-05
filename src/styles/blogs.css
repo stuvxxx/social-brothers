@@ -8,20 +8,14 @@
     margin:  36px 36px auto 37.5px;
     width: 636px;
     height: 826.5px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 300px 36px 300px;
     grid-template-columns: repeat(2, 300px);
-    -ms-grid-rows: 394.5px 37.5px 394.5px;
     grid-template-rows: repeat(2, 394.5px);
     grid-column-gap: 36px;
     grid-row-gap: 37.5px;
 }
 
-
 .pagination-wrapper {
-    width: -webkit-max-content;
-    width: -moz-max-content;
     width: max-content;
 }
 
@@ -37,19 +31,10 @@
     padding-bottom: 50px;
     max-width: 1387.5px;
     max-height: 990px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .big-blogs-item-wrapper {
@@ -58,19 +43,13 @@
     padding: 36px 36px 80px;
     width: 1312.5px;
     height: 826.5px;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 300px 36px 300px 36px 300px 36px 300px;
     grid-template-columns: repeat(4, 300px);
-    -ms-grid-rows: 394.5px 37.5px 394.5px;
     grid-template-rows: repeat(2, 394.5px);
     grid-column-gap: 36px;
     grid-row-gap: 37.5px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
-
 
 @media screen and (max-width: 1600px) {
     .blogs-wrapper {
@@ -82,16 +61,12 @@
         margin:  24px 24px auto 25px;
         width: 424px;
         height: 551px;
-        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 200px 24px 200px;
         grid-template-columns: repeat(2, 200px);
-        -ms-grid-rows: 263px 25px 263px;
         grid-template-rows: repeat(2, 263px);
         grid-column-gap: 24px;
         grid-row-gap: 25px;
     }
-    
 
     .big-blogs-wrapper {
         margin: 66px auto;
@@ -105,15 +80,12 @@
         padding: 24px 24px 60px;
         width: 875px;
         height: 551px;
-        -ms-grid-columns: 200px 24px 200px 24px 200px 24px 200px;
         grid-template-columns: repeat(4, 200px);
-        -ms-grid-rows: 263px 25px 263px;
         grid-template-rows: repeat(2, 263px);
         grid-column-gap: 24px;
         grid-row-gap: 25px;
     }
-}
-    
+  }
 
   @media screen and (max-width: 1000px) {
     .blogs-wrapper {
@@ -121,21 +93,16 @@
         height: 659px;
         margin-left: 12px;
     }
-}
 
     .blogs-item-wrapper {
         margin: 0 auto;
         margin-top: 12px;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
         width: fit-content;
         height: 551px;
-        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(1, 200px);
         grid-template-rows: repeat(4, 120px);
     }
-
     
     .big-blogs-wrapper {
         background-color: rgb(255, 255, 255);
@@ -143,19 +110,10 @@
         padding-bottom: 50px;
         max-width: 750px;
         max-height: 700px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
         
     
@@ -165,21 +123,14 @@
         padding: 36px 0px 80px;
         width: 700px;
         height: 430px;
-        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 200px 36px 200px 36px 200px;
         grid-template-columns: repeat(3, 200px);
-        -ms-grid-rows: 120px 37.5px 120px 37.5px 120px;
         grid-template-rows: repeat(3, 120px);
         grid-column-gap: 36px;
         grid-row-gap: 37.5px;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
     }
-        
-    
-
+  }
 
   @media screen and (max-width: 700px) {
     .blogs-wrapper {
@@ -195,23 +146,14 @@
         margin-top: 12px;
         margin-bottom: 12px;
         margin-left: 27.5px;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
         width: fit-content;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
         height: fit-content;
-        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 160px 24px 160px;
         grid-template-columns: repeat(2, 160px);
-        -ms-grid-rows: 220px 25px 220px;
         grid-template-rows: repeat(2, 220px);
         grid-column-gap: 24px;
         grid-row-gap: 25px;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
     }
 
     .big-blogs-wrapper {
@@ -220,19 +162,10 @@
         padding-bottom: 50px;
         width: 400px;
         min-height: 900px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
         
     .big-blogs-item-wrapper {
@@ -242,19 +175,13 @@
         padding: 0px 0px 0px;
         width: 400px;
         height: 1000px;
-        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 180px 12px 180px;
         grid-template-columns: repeat(2, 180px);
-        -ms-grid-rows: 200px 12px 200px 12px 200px 12px 200px;
         grid-template-rows: repeat(4, 200px);
         grid-column-gap: 12px;
         grid-row-gap: 12px;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
     }
-    
   }
 
 
