@@ -33,6 +33,22 @@ main {
     .main-wrapper {
       display: flex;
       flex-direction: row;
+      margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        background-color: #b41a1a;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
+    }
+  
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
   }
   }
 

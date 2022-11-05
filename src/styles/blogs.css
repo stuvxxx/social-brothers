@@ -102,6 +102,28 @@
         height: 551px;
         display: grid;
         grid-template-columns: repeat(1, 200px);
-        grid-template-rows: repeat(2, 263px);
+        grid-template-rows: repeat(4, 120px);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .blogs-wrapper {
+        width: 400px;
+        height: 659px;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+    .blogs-item-wrapper {
+        margin: 0 auto;
+        margin-top: 12px;
+        width: 380px;
+        height: 551px;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 220px);
+        grid-column-gap: 12px;
+        grid-row-gap: 12.5px;
+        background-color: rgb(255, 255, 255);
     }
   }

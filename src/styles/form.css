@@ -192,3 +192,83 @@ img {
     height: 72px 
   }
 }
+
+@media screen and (max-width: 700px) {
+  .form-wrapper {
+      background-color: rgb(255, 255, 255);
+      width: 400px;
+      height: 480px;
+  } 
+
+  form {
+    width: 380px;
+    height: 400px;
+    margin: 6px 12px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+  }
+  
+  label {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  
+  
+  input {
+    font-size: 12px;
+    height: 40px;
+    width: 350px;
+    padding-left: 8px;
+    margin-top: 7px;
+  }
+  
+  
+  input::placeholder {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  
+  .big-text {
+    height: 100px;
+    width: 380px;
+    margin-top: 7px;
+  }
+  
+  select {
+    font-size: 12px;
+    height: 40px;
+    width: 380px;
+    padding-left: 18px;
+    margin-top: 7px;
+  }
+  
+  #camera-ic {
+    height: 13px;
+    width: 12px;
+    margin-left: 15px;
+    margin-top: 24.5px;
+  }
+  
+  .upload-btn {
+    width: 80px;
+    height: 24px;
+    font-size: 8px;
+    border-radius: 18px;
+    margin-left: 16px;
+    margin-top: 19px;
+    cursor: pointer;
+  }
+  
+  .upload-btn p{
+    padding-top: 8px;
+  }
+  
+  img {
+    width: 200px;
+    height: 72px 
+  }
+}

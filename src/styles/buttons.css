@@ -37,7 +37,6 @@
 }
 
 
-
  .gone-btn-load {
   visibility: hidden;
 }
@@ -55,10 +54,25 @@
   min-height: 31px;
   width: 192px;
   font-size: 12px;
-  border: 0;
   margin-top: 24px;
   margin-left: 140px;
 }
+
+ .gone-btn-load {
+  visibility: hidden;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .btn-more {
+    min-height: 31px;
+    width: 192px;
+    font-size: 12px;
+    margin-top: 36px;
+    margin-left: 24px;
+ }
+
+
 
  .gone-btn-load {
   visibility: hidden;
