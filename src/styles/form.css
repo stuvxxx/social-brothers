@@ -1,21 +1,194 @@
 .form-wrapper {
-    background-color: aquamarine;
-    min-width: 645px;
-    min-height: 988.5px;
+    background-color: rgb(253, 253, 253);
+    width: 645px;
+    height: 988.5px;
 }
 
-@media screen and (max-width: 1600px) {
-    .form-wrapper {
-        background-color: aquamarine;
-        min-width: 537.5px;
-        min-height: 823.75px;
-    } 
-  }
+form {
+  width: 570px;
+  height: 916.5px;
+  margin: 36px 37.5px;
+  display: flex;
+  flex-direction: column;
+}
 
-@media screen and (max-width: 1200px) {
+h1 {
+  font-family: "Proxima";
+  font-size: 36px;
+  padding-top: 36px;
+  font-weight: 900;
+}
+
+label {
+  font-family: "Proxima";
+  font-size: 18px;
+  margin-top: 36px;
+}
+
+
+input {
+  font-family: "Proxima";
+  font-size: 18px;
+  height: 60px;
+  width: 540px;
+  padding-left: 27px;
+  background-color: #FAFAFA;
+  border: none;
+  margin-top: 10.5px;
+}
+
+
+input::placeholder {
+  font-family: "Proxima";
+  font-size: 18px;
+  margin-left: 27px;
+  font-style: italic;
+}
+
+.big-text {
+  height: 321px;
+  width: 540px;
+  border: none;
+  background-color: #FAFAFA;
+  margin-top: 10.5px;
+}
+
+select {
+  font-family: "Proxima";
+  font-size: 18px;
+  height: 60px;
+  width: 540px;
+  padding-left: 27px;
+  background-color: #FAFAFA;
+  border: none;
+  margin-top: 10.5px;
+}
+
+select,
+select option {
+  color: #000000;
+  font-style: normal;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #999999;
+  font-style: italic;
+}
+
+#camera-ic {
+  height: 19.5px;
+  width: 18px;
+  margin-left: 22.5px;
+  margin-top: 37.75px;
+}
+
+.upload-btn {
+  width: 120px;
+  height: 36px;
+  background-color: #999999;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  border-radius: 18px;
+  margin-left: 24px;
+  margin-top: 28.5px;
+  cursor: pointer;
+}
+
+.upload-btn p{
+  padding-top: 12px;
+}
+
+img {
+  width: 300px;
+  height: 108px 
+}
+
+[hidden] {
+  display: none;
+}
+
+.upload-wrapper {
+  display: flex;
+}
+
+
+@media screen and (max-width: 1600px) {
   .form-wrapper {
-      background-color: aquamarine;
-      min-width: 430px;
-      min-height: 659px;
+      background-color: rgb(255, 255, 255);
+      width: 430px;
+      height: 659px;
   } 
+
+  form {
+    width: 380px;
+    height: 611px;
+    margin: 24px 25px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    padding-top: 24px;
+  }
+  
+  label {
+    font-size: 12px;
+    margin-top: 24px;
+  }
+  
+  
+  input {
+    font-size: 12px;
+    height: 40px;
+    width: 380px;
+    padding-left: 18px;
+    margin-top: 7px;
+  }
+  
+  
+  input::placeholder {
+    font-size: 12px;
+    margin-left: 18px;
+  }
+  
+  .big-text {
+    height: 214px;
+    width: 380px;
+    margin-top: 7px;
+  }
+  
+  select {
+    font-size: 12px;
+    height: 40px;
+    width: 380px;
+    padding-left: 18px;
+    margin-top: 7px;
+  }
+  
+  #camera-ic {
+    height: 13px;
+    width: 12px;
+    margin-left: 15px;
+    margin-top: 24.5px;
+  }
+  
+  .upload-btn {
+    width: 80px;
+    height: 24px;
+    font-size: 8px;
+    border-radius: 18px;
+    margin-left: 16px;
+    margin-top: 19px;
+    cursor: pointer;
+  }
+  
+  .upload-btn p{
+    padding-top: 8px;
+  }
+  
+  img {
+    width: 200px;
+    height: 72px 
+  }
 }

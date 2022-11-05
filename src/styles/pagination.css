@@ -1,0 +1,37 @@
+.pageNumbers {
+    list-style: none;
+    display: flex;
+    font-family: "Proxima";
+}
+
+.pageNumbers li{
+    font-size: 12px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.pageNumbers li.active {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 12px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 50%;
+}
+
+.pagi-wrapper li button{
+    background-color: transparent;
+    border: none;
+    color: #F27623;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.pageNumbers li button:hover{
+    background-color: white;
+    color: black;
+}
+
+.pageNumbers li button:focus{
+    outline: none;
+}

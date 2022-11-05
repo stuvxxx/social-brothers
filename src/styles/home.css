@@ -14,15 +14,6 @@ main {
 
 
 @media screen and (max-width: 1600px) {
-    main {
-        background-color: #F4F4F4;
-        margin: 0 auto;
-        width: 1280px;
-        height: 947.5px;
-    }
-  }
-
-@media screen and (max-width: 1200px) {
   main {
       background-color: #F4F4F4;
       margin: 0 auto;
@@ -30,4 +21,18 @@ main {
       height: 758px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+    main {
+        background-color: #F4F4F4;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
+    }
+  
+    .main-wrapper {
+      display: flex;
+      flex-direction: row;
+  }
+  }
 

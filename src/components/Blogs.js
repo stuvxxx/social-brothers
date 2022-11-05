@@ -36,55 +36,48 @@ const Blogs = ({isBig}) => {
   })
   }
 
-  const handleClick = () => {
+  const setPageInView = (x) => {
+    console.log(x)
+    if(isNaN(x)) {
       const newPage = posts.next_page_url + "&perPage="
       getData(newPage)
+    }
+    else {
+      const newPage = "https://frontend-case-api.sbdev.nl/api/posts?page=" + x + "&perPage="
+      getData(newPage)
+    }
   }
+
+
 
   useEffect(() => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     getData("https://frontend-case-api.sbdev.nl/api/posts?page=&perPage=") }, [])
 
-
-    const onPageChange= (pageNumber) => {
-      console.log(currentPage)
+    const onPageChange= (pageNumber)=>{
+      console.log(pageNumber)
       setCurrentPage(pageNumber);
-      const newPage = "https://frontend-case-api.sbdev.nl/api/posts?page=" + pageNumber + "&perPage="
-      getData(newPage)
+      setPageInView(pageNumber)
     }
   
-    const onPrevClick = () => {
+    const onPrevClick = ()=>{
         console.log(currentPage)
-        if((currentPage -1) % pageNumberLimit === 0) {
+        if((currentPage-1) % pageNumberLimit === 0){
             setMaxPageLimit(maxPageLimit - pageNumberLimit);
             setMinPageLimit(minPageLimit - pageNumberLimit);
         }
-        setCurrentPage( prev => prev -1 );
-        const newPage = "https://frontend-case-api.sbdev.nl/api/posts?page=" + (currentPage -1) + "&perPage="
-        getData(newPage)
+        setCurrentPage(prev=> prev-1);
+        setPageInView(currentPage - 1)
+
      }
     
-    const onNextClick = () => {
-        console.log(currentPage)
-         if(currentPage + 1 > maxPageLimit){
+    const onNextClick = ()=>{
+         if(currentPage+1 > maxPageLimit){
              setMaxPageLimit(maxPageLimit + pageNumberLimit);
              setMinPageLimit(minPageLimit + pageNumberLimit);
          }
-         setCurrentPage( prev => prev +1 );
-         const newPage = "https://frontend-case-api.sbdev.nl/api/posts?page=" + (currentPage +1) + "&perPage="
-         getData(newPage)
-      }
-
-      const onLastClick = () => {
-        console.log("clicked")
-        const lastPage = posts.last_page
-        if(currentPage + 1 > maxPageLimit){
-          setMaxPageLimit(maxPageLimit + pageNumberLimit);
-          setMinPageLimit(minPageLimit + pageNumberLimit);
-      }
-         setCurrentPage( lastPage );
-         const newPage = "https://frontend-case-api.sbdev.nl/api/posts?page=" + ( lastPage ) + "&perPage="
-         getData(newPage)
+         setCurrentPage(prev=>prev+1);
+         setPageInView(currentPage + 1)
       }
 
   const paginationAttributes = {
@@ -105,14 +98,15 @@ const Blogs = ({isBig}) => {
               <BlogItem post={post} key={post.id}/>
             )
           })}
-          <Pagination {...paginationAttributes} 
-                          onPrevClick={onPrevClick} 
-                          onNextClick={onNextClick}
-                          onPageChange={onPageChange}
-                          onLastClick={onLastClick}
-                          />
         </div>
-        <button onClick={handleClick} className={isBig ? "gone-btn-load" : "btn-load"}>Meer laden</button>
+        <div className={isBig ? "pagination-wrapper" : "gone-blogs-wrapper"}>
+            <Pagination {...paginationAttributes} 
+                              onPrevClick={onPrevClick} 
+                              onNextClick={onNextClick}
+                              onPageChange={onPageChange}
+            />
+        </div>
+        <button id="btn-rechts" onClick={setPageInView} className={isBig ? "gone-btn-load" : "btn-more"}>Meer laden</button>
       </div>
     )
   };
