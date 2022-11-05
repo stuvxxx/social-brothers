@@ -5,8 +5,6 @@ import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import "../styles/form.css"
 import "../styles/buttons.css"
 
-
-
 function Form() {
   const [titel, setTitel] = useState("");
   const [categorie, setCategorie] = useState("");
@@ -21,7 +19,6 @@ function Form() {
       });
     }
   };
-
 
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -41,7 +38,6 @@ function Form() {
     })
     .catch((err) => alert("File Upload Error"));
   }
-
 
   return (
     <div className="form-wrapper">

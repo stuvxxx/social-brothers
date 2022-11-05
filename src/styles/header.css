@@ -36,22 +36,12 @@ header {
         padding-top: 20px;
         height: 250px;
     }
-
-    #title {
-        font-size: 48px;
-        margin-top: 13%;
-    }
 }
 
 @media screen and (max-width: 1000px) {
     header {
         padding-top: 20px;
         height: 100px;
-    }
-    
-    #title {
-        font-size: 22px;
-        margin-top: 13%;
     }
 }
 

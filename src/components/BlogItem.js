@@ -1,15 +1,12 @@
 import "../styles/blogs-item.css"
 import rect from "../assets/Mask-1.png"
 
-
 const imgBaseUrl = "https://frontend-case-api.sbdev.nl/storage/"
 
 const removeTime = (date) => {
   const newDate = date.split("T")
   return newDate[0]
 }
-
-
 
 const Blogs = ({post}) => {
     return (
@@ -26,6 +23,6 @@ const Blogs = ({post}) => {
         </div>
       </div>
   )
-  };
+};
   
   export default Blogs;

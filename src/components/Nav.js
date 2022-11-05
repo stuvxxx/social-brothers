@@ -16,7 +16,7 @@ const NavContainer = () => {
       <NavLink onClick={handleBlogsClick} exact to="/blogs">Blogs</NavLink>
     </nav>
   )
-  }
+}
 
   
   export default NavContainer;

@@ -1,274 +1,361 @@
 .form-wrapper {
-    background-color: rgb(253, 253, 253);
-    width: 645px;
-    height: 988.5px;
+  background-color: rgb(253, 253, 253);
+  width: 645px;
+  height: 988.5px;
 }
 
 form {
-  width: 570px;
-  height: 916.5px;
-  margin: 36px 37.5px;
-  display: flex;
-  flex-direction: column;
+width: 570px;
+height: 916.5px;
+margin: 36px 37.5px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 }
 
 h1 {
-  font-family: "Proxima";
-  font-size: 36px;
-  padding-top: 36px;
-  font-weight: 900;
+font-family: "Proxima";
+font-size: 36px;
+padding-top: 36px;
+font-weight: 900;
 }
 
 label {
-  font-family: "Proxima";
-  font-size: 18px;
-  margin-top: 36px;
+font-family: "Proxima";
+font-size: 18px;
+margin-top: 36px;
 }
 
 
 input {
-  font-family: "Proxima";
-  font-size: 18px;
-  height: 60px;
-  width: 540px;
-  padding-left: 27px;
-  background-color: #FAFAFA;
-  border: none;
-  margin-top: 10.5px;
+font-family: "Proxima";
+font-size: 18px;
+height: 60px;
+width: 540px;
+padding-left: 27px;
+background-color: #FAFAFA;
+border: none;
+margin-top: 10.5px;
+}
+
+
+input::-webkit-input-placeholder {
+font-family: "Proxima";
+font-size: 18px;
+margin-left: 27px;
+font-style: italic;
+}
+
+
+input::-moz-placeholder {
+font-family: "Proxima";
+font-size: 18px;
+margin-left: 27px;
+font-style: italic;
+}
+
+
+input:-ms-input-placeholder {
+font-family: "Proxima";
+font-size: 18px;
+margin-left: 27px;
+font-style: italic;
+}
+
+
+input::-ms-input-placeholder {
+font-family: "Proxima";
+font-size: 18px;
+margin-left: 27px;
+font-style: italic;
 }
 
 
 input::placeholder {
-  font-family: "Proxima";
-  font-size: 18px;
-  margin-left: 27px;
-  font-style: italic;
+font-family: "Proxima";
+font-size: 18px;
+margin-left: 27px;
+font-style: italic;
 }
 
 .big-text {
-  height: 321px;
-  width: 540px;
-  border: none;
-  background-color: #FAFAFA;
-  margin-top: 10.5px;
+height: 321px;
+width: 540px;
+border: none;
+background-color: #FAFAFA;
+margin-top: 10.5px;
 }
 
 select {
-  font-family: "Proxima";
-  font-size: 18px;
-  height: 60px;
-  width: 540px;
-  padding-left: 27px;
-  background-color: #FAFAFA;
-  border: none;
-  margin-top: 10.5px;
+font-family: "Proxima";
+font-size: 18px;
+height: 60px;
+width: 540px;
+padding-left: 27px;
+background-color: #FAFAFA;
+border: none;
+margin-top: 10.5px;
 }
 
 select,
 select option {
-  color: #000000;
-  font-style: normal;
+color: #000000;
+font-style: normal;
 }
 
 select:invalid,
 select option[value=""] {
-  color: #999999;
-  font-style: italic;
+color: #999999;
+font-style: italic;
 }
 
 #camera-ic {
-  height: 19.5px;
-  width: 18px;
-  margin-left: 22.5px;
-  margin-top: 37.75px;
+height: 19.5px;
+width: 18px;
+margin-left: 22.5px;
+margin-top: 37.75px;
 }
 
 .upload-btn {
-  width: 120px;
-  height: 36px;
-  background-color: #999999;
-  text-align: center;
-  color: white;
-  font-size: 12px;
-  border-radius: 18px;
-  margin-left: 24px;
-  margin-top: 28.5px;
-  cursor: pointer;
+width: 120px;
+height: 36px;
+background-color: #999999;
+text-align: center;
+color: white;
+font-size: 12px;
+border-radius: 18px;
+margin-left: 24px;
+margin-top: 28.5px;
+cursor: pointer;
 }
 
 .upload-btn p{
-  padding-top: 12px;
+padding-top: 12px;
 }
 
 img {
-  width: 300px;
-  height: 108px 
+width: 300px;
+height: 108px 
 }
 
 [hidden] {
-  display: none;
+display: none;
 }
 
 .upload-wrapper {
-  display: flex;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
 }
 
 
 @media screen and (max-width: 1600px) {
-  .form-wrapper {
-      background-color: rgb(255, 255, 255);
-      width: 430px;
-      height: 659px;
-  } 
+.form-wrapper {
+    background-color: rgb(255, 255, 255);
+    width: 430px;
+    height: 659px;
+} 
 
-  form {
-    width: 380px;
-    height: 611px;
-    margin: 24px 25px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    padding-top: 24px;
-  }
-  
-  label {
-    font-size: 12px;
-    margin-top: 24px;
-  }
-  
-  
-  input {
-    font-size: 12px;
-    height: 40px;
-    width: 380px;
-    padding-left: 18px;
-    margin-top: 7px;
-  }
-  
-  
-  input::placeholder {
-    font-size: 12px;
-    margin-left: 18px;
-  }
-  
-  .big-text {
-    height: 214px;
-    width: 380px;
-    margin-top: 7px;
-  }
-  
-  select {
-    font-size: 12px;
-    height: 40px;
-    width: 380px;
-    padding-left: 18px;
-    margin-top: 7px;
-  }
-  
-  #camera-ic {
-    height: 13px;
-    width: 12px;
-    margin-left: 15px;
-    margin-top: 24.5px;
-  }
-  
-  .upload-btn {
-    width: 80px;
-    height: 24px;
-    font-size: 8px;
-    border-radius: 18px;
-    margin-left: 16px;
-    margin-top: 19px;
-    cursor: pointer;
-  }
-  
-  .upload-btn p{
-    padding-top: 8px;
-  }
-  
-  img {
-    width: 200px;
-    height: 72px 
-  }
+form {
+  width: 380px;
+  height: 611px;
+  margin: 24px 25px;
+}
+
+h1 {
+  font-size: 24px;
+  padding-top: 24px;
+}
+
+label {
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+
+input {
+  font-size: 12px;
+  height: 40px;
+  width: 380px;
+  padding-left: 18px;
+  margin-top: 7px;
+}
+
+
+input::-webkit-input-placeholder {
+  font-size: 12px;
+  margin-left: 18px;
+}
+
+
+input::-moz-placeholder {
+  font-size: 12px;
+  margin-left: 18px;
+}
+
+
+input:-ms-input-placeholder {
+  font-size: 12px;
+  margin-left: 18px;
+}
+
+
+input::-ms-input-placeholder {
+  font-size: 12px;
+  margin-left: 18px;
+}
+
+
+input::placeholder {
+  font-size: 12px;
+  margin-left: 18px;
+}
+
+.big-text {
+  height: 214px;
+  width: 380px;
+  margin-top: 7px;
+}
+
+select {
+  font-size: 12px;
+  height: 40px;
+  width: 380px;
+  padding-left: 18px;
+  margin-top: 7px;
+}
+
+#camera-ic {
+  height: 13px;
+  width: 12px;
+  margin-left: 15px;
+  margin-top: 24.5px;
+}
+
+.upload-btn {
+  width: 80px;
+  height: 24px;
+  font-size: 8px;
+  border-radius: 18px;
+  margin-left: 16px;
+  margin-top: 19px;
+  cursor: pointer;
+}
+
+.upload-btn p{
+  padding-top: 8px;
+}
+
+img {
+  width: 200px;
+  height: 72px 
+}
 }
 
 @media screen and (max-width: 700px) {
-  .form-wrapper {
-      background-color: rgb(255, 255, 255);
-      width: 400px;
-      height: 480px;
-  } 
+.form-wrapper {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 480px;
+} 
 
-  form {
-    width: 380px;
-    height: 400px;
-    margin: 6px 12px;
-  }
-  
-  h1 {
-    font-size: 18px;
-    padding-top: 12px;
-    padding-bottom: 6px;
-  }
-  
-  label {
-    font-size: 12px;
-    margin-top: 12px;
-  }
-  
-  
-  input {
-    font-size: 12px;
-    height: 40px;
-    width: 350px;
-    padding-left: 8px;
-    margin-top: 7px;
-  }
-  
-  
-  input::placeholder {
-    font-size: 12px;
-    margin-left: 8px;
-  }
-  
-  .big-text {
-    height: 100px;
-    width: 380px;
-    margin-top: 7px;
-  }
-  
-  select {
-    font-size: 12px;
-    height: 40px;
-    width: 380px;
-    padding-left: 18px;
-    margin-top: 7px;
-  }
-  
-  #camera-ic {
-    height: 13px;
-    width: 12px;
-    margin-left: 15px;
-    margin-top: 24.5px;
-  }
-  
-  .upload-btn {
-    width: 80px;
-    height: 24px;
-    font-size: 8px;
-    border-radius: 18px;
-    margin-left: 16px;
-    margin-top: 19px;
-    cursor: pointer;
-  }
-  
-  .upload-btn p{
-    padding-top: 8px;
-  }
-  
-  img {
-    width: 200px;
-    height: 72px 
-  }
+form {
+  width: 380px;
+  height: 400px;
+  margin: 6px 12px;
+}
+
+h1 {
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+label {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+
+input {
+  font-size: 12px;
+  height: 40px;
+  width: 350px;
+  padding-left: 8px;
+  margin-top: 7px;
+}
+
+
+input::-webkit-input-placeholder {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+
+input::-moz-placeholder {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+
+input:-ms-input-placeholder {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+
+input::-ms-input-placeholder {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+
+input::placeholder {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.big-text {
+  height: 100px;
+  width: 380px;
+  margin-top: 7px;
+}
+
+select {
+  font-size: 12px;
+  height: 40px;
+  width: 380px;
+  padding-left: 18px;
+  margin-top: 7px;
+}
+
+#camera-ic {
+  height: 13px;
+  width: 12px;
+  margin-left: 15px;
+  margin-top: 24.5px;
+}
+
+.upload-btn {
+  width: 80px;
+  height: 24px;
+  font-size: 8px;
+  border-radius: 18px;
+  margin-left: 16px;
+  margin-top: 19px;
+  cursor: pointer;
+}
+
+.upload-btn p{
+  padding-top: 8px;
+}
+
+img {
+  width: 200px;
+  height: 72px 
+}
 }

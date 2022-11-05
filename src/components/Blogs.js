@@ -6,12 +6,14 @@ import BlogItem from "./BlogItem"
 import Loading from "./Loading"
 import Pagination from "./Pagination"
 
-
 const Blogs = ({isBig}) => {
 
-  const pageNumberLimit = 5;
+  /* I wanted to use only one page for both blog views, my solution isnt the cleanest would have done it
+  differently the second time :) */
+
   let blogsInView = isBig ? 8 : 4
 
+  const pageNumberLimit = 5;
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,7 +36,7 @@ const Blogs = ({isBig}) => {
       })
       .finally(() => {
         setLoading(false)
-  })
+   })
   }
 
   const setPageInView = (x) => {
@@ -48,13 +50,9 @@ const Blogs = ({isBig}) => {
       getData(newPage)
     }
   }
-
-
-
   useEffect(() => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     getData("https://frontend-case-api.sbdev.nl/api/posts?page=&perPage=") }, [])
-
 
     const onPageChange= (pageNumber)=>{
       console.log(pageNumber)
@@ -70,9 +68,8 @@ const Blogs = ({isBig}) => {
         }
         setCurrentPage(prev=> prev-1);
         setPageInView(currentPage - 1)
-
      }
-    
+  
     const onNextClick = ()=>{
          if(currentPage+1 > maxPageLimit){
              setMaxPageLimit(maxPageLimit + pageNumberLimit);
@@ -82,11 +79,11 @@ const Blogs = ({isBig}) => {
          setPageInView(currentPage + 1)
       }
 
-  const paginationAttributes = {
-    currentPage,
-    maxPageLimit,
-    minPageLimit,
-    response: posts,
+    const paginationAttributes = {
+      currentPage,
+      maxPageLimit,
+      minPageLimit,
+      response: posts,
   };
 
 

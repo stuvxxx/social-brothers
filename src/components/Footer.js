@@ -2,8 +2,6 @@ import "../styles/footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
-
-
 const Header = () => {
     return (
       <div className="footer">

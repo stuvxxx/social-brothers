@@ -11,6 +11,6 @@ const HomeView = () => {
         </div>
       </main>
   )
-  };
+};
   
   export default HomeView;
