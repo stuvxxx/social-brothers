@@ -1,7 +1,7 @@
 const Loading = () => {
     return (
       <div className="loading">
-        Loading
+        Loading...
       </div>
   )
   };
